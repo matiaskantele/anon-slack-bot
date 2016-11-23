@@ -31,3 +31,10 @@ var server = http.createServer(handleRequest);
 server.listen(PORT, function(){
     console.log('Server listening on: http://localhost:%s', PORT);
 });
+
+const url = process.env.URL || 'www.google.com';
+
+// prevent heroku from sleeping the dyno
+setInterval(function() {
+    http.get(url);
+}, 900000); // every 15 minutes
