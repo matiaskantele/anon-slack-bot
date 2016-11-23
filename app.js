@@ -16,3 +16,18 @@ rtm.on(RTM_EVENTS.MESSAGE, function handleRtmMessage(message) {
 });
 
 rtm.start();
+
+
+// a simple server implementation to keep heroku happy (prevent error r10)
+var http = require('http');
+const PORT = process.env.PORT || 3000;
+
+function handleRequest(request, response){
+  response.end("Anon bot welcomes you. Please make yourself comfortable.");
+}
+
+var server = http.createServer(handleRequest);
+
+server.listen(PORT, function(){
+    console.log('Server listening on: http://localhost:%s', PORT);
+});
