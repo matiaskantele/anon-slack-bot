@@ -1,0 +1,18 @@
+{
+  "name": "anon-slack-bot",
+  "description": "Anon Slack bot will convey anonymous feedback to #SLACK_CHANNEL.",
+  "repository": "https://github.com/matiisi/anon-slack-bot",
+  "keywords": ["slack", "bot", "anonymous", "feedback"],
+  "env": {
+    "SLACK_API_TOKEN": {
+      "description": "Token for using Slack's API. Generated when creating a bot at https://my.slack.com/services/new/bot",
+      "value": "",
+      "required": true
+    },
+    "SLACK_CHANNEL": {
+      "description": "Anon bot will post messages here",
+      "value": "",
+      "required": true
+    }
+  }
+}

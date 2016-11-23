@@ -1,0 +1,31 @@
+{
+  "name": "anon-slack-bot",
+  "version": "1.0.0",
+  "description": "Slack bot for anonymous feedback",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/matiisi/anon-slack-bot.git"
+  },
+  "keywords": [
+    "slack",
+    "bot",
+    "anonymous",
+    "feedback"
+  ],
+  "author": "Matias Kantele <matias.kantele@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/matiisi/anon-slack-bot/issues"
+  },
+  "homepage": "https://github.com/matiisi/anon-slack-bot#readme",
+  "dependencies": {
+    "@slack/client": "^3.6.1"
+  },
+  "engines": {
+    "node": "7.1.0"
+  }
+}
